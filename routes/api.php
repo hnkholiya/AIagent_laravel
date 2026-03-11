@@ -1,8 +1,7 @@
 <?php
 
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AIagentController;
 
-use App\Http\Controllers\AIAgentController;
-use App\Http\Controllers\AIagentController as ControllersAIagentController;
-
-Route::post('/ai-agent',[ControllersAIagentController::class,'ask']);
+Route::post('/ai-agent', [AIAgentController::class, 'ask']);
